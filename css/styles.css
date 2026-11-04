@@ -1,5 +1,7 @@
 body {
     background-color: #901CAD;
+    font-family: "Open Sans", sans-serif;
+
 }
 
 .content-container {
@@ -7,4 +9,36 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+}
+
+h2 {
+    color: #3046c5;
+    /*var(--primary-color) */
+}
+
+header h2 {
+    color: #cec8ff;
+}
+
+:root {
+    --primary-color: #3046c5;
+    --header-gradient-start: #5637dd;
+    --header-gradient-end: #60106b;
+}
+
+/*is this needed here*/
+header {
+    padding: 30px;
+    background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
 }
