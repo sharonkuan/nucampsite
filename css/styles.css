@@ -47,6 +47,16 @@ header {
     background-color: #901CAD;
 }
 
+.navbar-toggler {
+    margin-left: auto;
+}
+
 address {
     font-style: normal;
+}
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
 }
