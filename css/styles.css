@@ -30,7 +30,6 @@ header h2 {
     --header-gradient-end: #60106b;
 }
 
-/*is this needed here*/
 header {
     padding: 30px;
     background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
