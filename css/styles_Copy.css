@@ -1,0 +1,96 @@
+/* ===== Palette ===== */
+:root {
+    --primary-color: #0f766e;
+    --header-gradient-start: #134e4a;
+    --header-gradient-mid: #0f766e;
+    --header-gradient-end: #0d9488;
+    --accent: #f59e0b;
+    --mint: #ccfbf1;
+}
+
+/* ===== Headings ===== */
+h2 {
+    color: var(--primary-color);
+}
+
+header h2 {
+    color: var(--mint);
+}
+
+/* ===== Header and navbar ===== */
+.hero {
+    background-image: linear-gradient(
+        to right,
+        var(--header-gradient-start),
+        var(--header-gradient-mid),
+        var(--header-gradient-end)
+    );
+}
+
+.navbar {
+    background-color: #134e4a;
+}
+
+.navbar-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    background-image: linear-gradient(var(--mint), white);
+}
+
+/* ===== Carousel ===== */
+.carousel {
+    border: solid var(--accent);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+    z-index: 5;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 50%;
+    background-size: 50% 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+/* ===== All modals ===== */
+.modal .modal-content {
+    background-color: #f0fdf4;
+    border: 2px solid #0f766e;
+    border-radius: 1rem;
+}
+
+.modal .modal-header {
+    background: linear-gradient(90deg, #0f766e, #134e4a);
+    color: #fff;
+    border-bottom: 3px solid var(--accent);
+}
+
+.modal .modal-title {
+    color: #fff;
+}
+
+.modal .modal-footer {
+    background-color: var(--mint);
+    border-top: none;
+}
+
+/* Green buttons inside modals */
+.modal .btn-primary {
+    background-color: #0f766e;
+    border-color: #0f766e;
+}
+
+.modal .btn-primary:hover,
+.modal .btn-primary:focus {
+    background-color: #134e4a;
+    border-color: #134e4a;
+}
