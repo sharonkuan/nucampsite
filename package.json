@@ -5,7 +5,7 @@
   "author": "Sharon Kuan",
   "license": "ISC",
    "description": "A fictional campsites review website.",
-  "source": "index.html",
+  "source": ["index.html", "aboutus.html", "contactus.html"],
    "scripts": {
     "start": "parcel --open",
     "build": "parcel build"
