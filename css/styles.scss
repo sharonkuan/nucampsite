@@ -1,7 +1,15 @@
-body {
-    /*background-color: #901CAD;*/
-    font-family: "Open Sans", sans-serif;
+$color-primary: #3046C5;
+$color-secondary: #5637dd;
+$color-pale: #CEC8FF;
+$color-mid: #901CAD;
+$color-dark: #60106b;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
 
+$body-font: "Open Sans", sans-serif;
+$header-font: "Lobster", cursive;
+
+body {
+    font-family: $body-font;
 }
 
 .content-container {
@@ -12,16 +20,17 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
+    font-family: $header-font;
 }
 
 h2 {
-    color: #3046c5;
-    /*var(--primary-color) */
+    color: $color-primary;
 }
 
-header h2 {
-    color: #cec8ff;
+header {
+    h2 {
+        color: $color-pale;
+    }
 }
 
 :root {
@@ -43,8 +52,9 @@ header {
 }
 
 .navbar {
-    background-color: #901CAD;
+    background-color: $color-mid;
 }
+
 
 .navbar-toggler {
     margin-left: auto;
@@ -54,9 +64,10 @@ address {
     font-style: normal;
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-}
 .carousel {
-    border: solid #5637DD;
+    border: solid $color-secondary;
+}
+
+.carousel-caption {
+    background-color: $color-black-transparent;
 }
