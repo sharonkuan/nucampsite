@@ -73,16 +73,4 @@ address {
     background-color: $color-black-transparent;
 }
 
-#reserveModal {
-    .modal-header {
-        background-color: $color-teal;
-        color: white;
-    }
-}
-
-#loginModal {
-    .modal-header {
-        background-color: $color-mid;
-        color: white;
-    }
-}
+@import 'common_modal';
