@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
 
-    <!-- Additional CSS must be placed after Bootstrap CSS-->
     <link
       rel="stylesheet"
       href="node_modules/font-awesome/css/font-awesome.min.css"
@@ -31,7 +29,6 @@
     <title>Nucamp: A Better Way To Camp</title>
   </head>
   <body>
-    <!-- header -->
     <header class="hero">
       <div class="content-container">
         <a href="index.html"><img src="img/logo.png" alt="Nucamp logo" /></a>
@@ -78,11 +75,6 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="fa fa-list fa-lg"></i> Sites</a
-              >
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="contactus.html"
                 ><i class="fa fa-address-card fa-lg"></i> Contact</a
               >
@@ -101,7 +93,6 @@
       </div>
     </nav>
 
-    <!-- login modal -->
     <div class="modal fade" id="loginModal">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -116,7 +107,10 @@
           </div>
           <div class="modal-body">
             <div class="container-fluid">
-              <form>
+              <form
+                action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata"
+                method="post"
+              >
                 <div class="row">
                   <div class="mb-3 col-12">
                     <label class="form-label" for="loginEmail"
@@ -168,9 +162,7 @@
       </div>
     </div>
 
-    <!-- main section -->
     <main class="container">
-      <!-- Carousel -->
       <div class="row row-content">
         <div class="col-md-8 mx-auto">
           <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -264,7 +256,6 @@
       </div>
 
       <div class="content-container">
-        <!-- discovery section -->
         <div class="content-row align-items-center">
           <div class="content-heading align-right">
             <h2>Discover & Review</h2>
@@ -285,7 +276,6 @@
           </div>
         </div>
 
-        <!-- feature section -->
         <div class="content-row align-items-center">
           <div class="content-heading">
             <h2>Featured Campsites</h2>
@@ -307,7 +297,6 @@
           </div>
         </div>
 
-        <!-- partner section -->
         <div class="content-row align-items-center">
           <div class="content-heading align-right">
             <h2>Our Community Partners</h2>
@@ -328,7 +317,7 @@
           </div>
         </div>
 
-        <div class="row row-content align-items-start review-section mb-3">
+        <div class="row content-row align-items-start review-section mb-3">
           <div class="col-sm-4 col-md-3 order-sm-first">
             <h2 class="text-sm-end">What Are Happy Campers Saying?</h2>
           </div>
@@ -441,7 +430,6 @@
       </div>
     </main>
 
-    <!-- footer -->
     <footer class="site-footer">
       <div class="content-container">
         <div class="footer-grid">
@@ -450,7 +438,6 @@
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="aboutus.html">About</a></li>
-              <li><a href="#">Site</a></li>
               <li><a href="contactus.html">Contact</a></li>
             </ul>
           </div>
@@ -490,7 +477,6 @@
       </div>
     </footer>
 
-    <!-- Bootstrap Javascript -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
