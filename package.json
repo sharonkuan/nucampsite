@@ -6,9 +6,7 @@
   "license": "ISC",
   "description": "A fictional campsites review website.",
   "source": [
-    "index.html",
-    "aboutus.html",
-    "contactus.html"
+    "index.html"
   ],
   "scripts": {
     "start": "parcel --open",
